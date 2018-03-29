@@ -1,0 +1,32 @@
+
+  <div fxLayout="row" class="header">
+<div>
+<button id="bouton-menu" mat-button [matMenuTriggerFor]="Menu">Menu</button>
+
+<mat-menu #Menu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="Affaires">Affaires</button>
+  <button mat-menu-item [matMenuTriggerFor]="Vehicules">Vehicules</button>
+  <button mat-menu-item [matMenuTriggerFor]="Personnes">Personnes</button>
+</mat-menu>
+
+<mat-menu #Affaires="matMenu">
+  <button mat-menu-item routerLink="/affaires">Lister mes affaires</button>
+  <button mat-menu-item routerLink="/add">Ajouter une affaire</button>
+</mat-menu>
+
+<mat-menu #Vehicules="matMenu">
+  <button mat-menu-item>véhicules</button>  
+</mat-menu>
+
+<mat-menu #Personnes="matMenu">
+  <button mat-menu-item routerLink="/table">Lister les personnes</button>  
+</mat-menu>
+</div>
+<div id="titre" class="col-sm-10">
+Police Simplon
+</div>
+</div>
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

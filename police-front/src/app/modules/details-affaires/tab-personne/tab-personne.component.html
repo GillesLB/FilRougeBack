@@ -1,0 +1,65 @@
+<mat-table #table [dataSource]="dataSource" matSort>
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="id">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Id. </mat-header-cell>
+    <mat-cell *matCellDef="let p"> {{p.id}} </mat-cell>
+  </ng-container>
+
+  <!-- Prénom Column -->
+  <ng-container matColumnDef="firstName">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Prénom </mat-header-cell>
+    <mat-cell *matCellDef="let p"> {{p.firstName}} </mat-cell>
+  </ng-container>
+
+  <!-- Nom Column -->
+  <ng-container matColumnDef="lastName">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Nom </mat-header-cell>
+    <mat-cell *matCellDef="let p"> {{p.lastName}} </mat-cell>
+  </ng-container>
+
+  <!-- Surnom Column -->
+  <ng-container matColumnDef="nickName">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Surnom </mat-header-cell>
+    <mat-cell *matCellDef="let p"> {{p.nickName}} </mat-cell>
+  </ng-container>
+
+  <!-- Status Column -->
+  <ng-container matColumnDef="status">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
+    <mat-cell *matCellDef="let p"> {{p.status}} </mat-cell>
+  </ng-container>
+
+  <!-- Editer Column -->
+  <ng-container matColumnDef="editer">
+    <mat-header-cell *matHeaderCellDef>Editer </mat-header-cell>
+    <mat-cell *matCellDef="let affaire" href="" [routerLink]="['/affaires',affaire.id]">
+      <button mat-icon-button>
+        <mat-icon aria-label="icon-button with a create icon">create</mat-icon>
+      </button>
+    </mat-cell>
+  </ng-container>
+
+  <!-- Editer Column -->
+  <ng-container matColumnDef="ajouter">
+    <mat-header-cell *matHeaderCellDef>Ajouter </mat-header-cell>
+    <mat-cell *matCellDef="let p">
+      <button mat-icon-button>
+        <mat-icon aria-label="icon-button with a create icon">add</mat-icon>
+      </button>
+    </mat-cell>
+  </ng-container>
+
+  <!-- Supprimer Column -->
+  <ng-container matColumnDef="supprimer">
+    <mat-header-cell *matHeaderCellDef>Supprimer</mat-header-cell>
+    <mat-cell *matCellDef="let p">
+      <button mat-icon-button (click)="openDeleteDialog(p.id)">
+        <mat-icon aria-label="icon-button with a delete icon">delete</mat-icon>
+      </button>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

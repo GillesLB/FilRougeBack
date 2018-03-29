@@ -1,0 +1,43 @@
+<mat-table #table [dataSource]="dataSource" matSort>
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="id">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Id. </mat-header-cell>
+    <mat-cell *matCellDef="let w"> {{w.id}} </mat-cell>
+  </ng-container>
+
+  <!-- Prénom Column -->
+  <ng-container matColumnDef="type">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Type d'Arme </mat-header-cell>
+    <mat-cell *matCellDef="let w"> {{w.type}} </mat-cell>
+  </ng-container>
+
+  <!-- Nom Column -->
+  <ng-container matColumnDef="modele">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Modèle </mat-header-cell>
+    <mat-cell *matCellDef="let w"> {{w.modele}} </mat-cell>
+  </ng-container>
+
+  <!-- Editer Column -->
+  <ng-container matColumnDef="editer">
+    <mat-header-cell *matHeaderCellDef>Editer </mat-header-cell>
+    <mat-cell *matCellDef="let w" href="" >
+      <button mat-icon-button>
+        <mat-icon aria-label="icon-button with a create icon">create</mat-icon>
+      </button>
+    </mat-cell>
+  </ng-container>
+ 
+  <!-- Supprimer Column -->
+  <ng-container matColumnDef="supprimer">
+    <mat-header-cell *matHeaderCellDef>Supprimer</mat-header-cell>
+    <mat-cell *matCellDef="let w">
+      <button mat-icon-button (click)="openDeleteDialog(w.id)">
+        <mat-icon aria-label="icon-button with a delete icon">delete</mat-icon>
+      </button>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

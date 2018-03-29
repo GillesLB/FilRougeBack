@@ -1,0 +1,75 @@
+<ngx-spinner
+bdOpacity = 0.9
+bdColor = "#333"
+size = "large"
+color = "blue"
+type = "timer"
+></ngx-spinner>
+
+
+
+  <div class="gauche">
+      <h4><b>Affaires détaillées : </b></h4>
+  </div>
+
+  <div class="centrer">
+    <mat-form-field>
+      <input class="col-sm-6" matInput (keyup)="applyFilter($event.target.value)" placeholder="Mot à rechercher">
+    </mat-form-field>
+  </div>
+
+
+
+    <mat-card>
+  <div class="example-container mat-elevation-z8">
+    <mat-table #table [dataSource]="dataSource" matSort>
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> No. </mat-header-cell>
+        <mat-cell *matCellDef="let affaire"> {{affaire.id}} </mat-cell>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="nom">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Nom </mat-header-cell>
+        <mat-cell *matCellDef="let affaire"> {{affaire.name}} </mat-cell>
+      </ng-container>
+
+      <!-- Description Column -->
+      <ng-container matColumnDef="description">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Description </mat-header-cell>
+        <mat-cell *matCellDef="let affaire"> {{affaire.description}} </mat-cell>
+      </ng-container>
+
+      <!-- Date creation Column -->
+      <ng-container matColumnDef="dateCreation">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Date de Création </mat-header-cell>
+        <mat-cell *matCellDef="let affaire"> {{affaire.dateCreation | date:'dd/MM/yyyy'}} </mat-cell>
+      </ng-container>
+
+      <!-- Date modification Column -->
+      <ng-container matColumnDef="dateModification">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Date de Modification </mat-header-cell>
+        <mat-cell *matCellDef="let affaire"> {{affaire.dateModification | date:'dd/MM/yyyy'}} </mat-cell>
+      </ng-container>
+
+      <!-- Editer Column -->
+      <ng-container matColumnDef="editer">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Editer </mat-header-cell>
+        <mat-cell *matCellDef="let affaire" href="" [routerLink]="['/affaires',affaire.id]">
+          <button mat-icon-button>
+            <mat-icon aria-label="icon-button with a create icon">create</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+    <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20, 50]" [showFirstLastButtons]="true">
+    </mat-paginator>
+
+  </div>
+</mat-card>

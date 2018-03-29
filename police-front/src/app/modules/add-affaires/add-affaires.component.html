@@ -1,0 +1,30 @@
+<div *ngIf="affaires" class="container" fxLayout="row" fxLayout.xs="column" fxFlex="1 0 auto">
+
+  <div class="col-md-6">
+    <h2 class="text-center">Créer une Affaires</h2>
+    <form>
+      <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" [(ngModel)]="affaires.name" placeholder="Nom" name="nom" class="form-control" id="nom">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description :</label>
+        <input [(ngModel)]="affaires.description" placeholder="Description" name="description" class="form-control" id="description">
+      </div>
+
+
+      <div class="form-group">
+        <label for="marque">Marque du Vehicule :</label>
+        <input [(ngModel)]="vehicule.marque" placeholder="Marque du  Véhicule" name="marque" class="form-control" id="marque">
+      </div>
+
+      <div class="form-group">
+        <label for="model">Modele du Vehicule :</label>
+        <input [(ngModel)]="vehicule.model" placeholder="Modele du  Véhicule" name="model" class="form-control" id="model">
+      </div>
+
+      <button class="btn btn-success" (click)="createAffaires()">Créer </button>
+    </form>
+  </div>
+</div>

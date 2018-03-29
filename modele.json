@@ -1,0 +1,75 @@
+{
+    "nom": "affaire roswell",
+    "description": "enlevement ",
+    "cloture": false,
+   
+    "armes": [
+        {
+            "type": "pistolet",
+            "modele": "colt"
+           
+        },
+        {
+            "type": "couteau",
+            "modele": "chasse"
+            
+        }
+    ],
+    "personnes": [
+        {
+            "nom": "kruger",
+            "prenom": "freddy",
+           
+            "empreintes": [
+                {
+                    "empreinte": "9999999999999999999"
+                   
+                }
+            ],
+            "documents": [
+                {
+                    "documents": "carte de sejour"
+                   
+                },
+                {
+                    "documents": "passeport"
+                    
+                }
+            ]
+        },
+        {
+            "nom": "gaga",
+            "prenom": "lady",
+            
+            "empreintes": [
+                {
+                    "empreinte": "6666666666"
+                   
+                }
+            ],
+            "documents": [
+                {
+                    
+                    "documents": "visa"
+                    
+                }
+            ]
+        }
+    ],
+    "vehicules": [
+        {
+            "marque": "peugeot",
+            "modele": "208",
+            "couleur": "verte",
+            "immatriculation": "zz999xx"
+            
+        },
+        {
+            "marque": "citroen",
+            "modele": "c3",
+            "couleur": "rouge",
+            "immatriculation": "tt555yy"
+           
+        }
+    ]
+}

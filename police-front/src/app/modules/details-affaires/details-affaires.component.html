@@ -1,0 +1,58 @@
+<router-outlet></router-outlet>
+<div *ngIf="affaire" class="container" fxLayout="row" fxLayout.xs="column" fxFlex="1 0 auto">
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>
+        <h3><u>Affaire</u> : <b>{{affaire.name}}</b></h3>
+      </mat-card-title>
+
+      <mat-card-subtitle>
+        <h5><u>Description</u> &nbsp; : &nbsp;&nbsp; <b>{{affaire.description}}</b></h5>
+      </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p class="gauche">Date de création : <b>{{affaire.dateCreation | date : "dd/MM/yyyy" }}</b></p><p class="droite">Date de dernière modification : <b>{{affaire.dateModification | date : "dd/MM/yyyy" }}</b></p>
+      <hr>
+
+      <div fxLayout='column' fxLayoutAlign="center">
+        <h5 class="item item-1" fxFlex="15%">Détails</h5>
+      </div>
+
+      <mat-tab-group>
+        <mat-tab label="Personnes">
+          <mat-card>
+            <app-tab-personne></app-tab-personne>
+          </mat-card>
+        </mat-tab>
+
+        <mat-tab label="Vehicules">
+          <mat-card>
+            <app-tab-vehicule></app-tab-vehicule>
+          </mat-card>
+        </mat-tab>
+
+        <mat-tab label="Photos">
+          <app-tab-photo></app-tab-photo>
+        </mat-tab>
+
+        <mat-tab label="Armes">
+          <app-tab-arme></app-tab-arme>
+        </mat-tab>
+
+        <mat-tab label="Pièce à conviction">
+          <app-tab-piece></app-tab-piece>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button>EDITER</button>
+      <button mat-button (click)='openDeleteDialog()'>SUPPRIMER</button>
+    </mat-card-actions>
+
+  </mat-card>
+
+</div>
