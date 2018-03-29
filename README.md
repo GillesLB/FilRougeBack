@@ -7,7 +7,7 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 2. ![Alt Text](https://img.shields.io/badge/Maven-3.5.2-green.svg)
 3. ![Alt Text](https://img.shields.io/badge/MySQL-5.6-red.svg)
 4. IDE Eclipse ou IntelliJ
- ###### Installation
+ ###### Démarrage
 1. Ouvrir le projet avec l'IDE
 2. Update des dépendances avec MAVEN
 3. Modifier les propriétés MySQL du fichier `application.properties` en fonction de l'environnement du poste d'execution
@@ -41,6 +41,10 @@ Exemple :
  ```SQL
  INSERT IGNORE INTO `police_case` (`id`,`name`,`description`) VALUES (1,'avion détouné','mi, ac mattis velit justo nec')
  ```
+ 
+ ### Utilisation des API
+ ###### Routes
+ 
 
 ## Schema Base de Données MySql
  
