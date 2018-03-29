@@ -7,6 +7,10 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 2. Apache Maven 3.5.2
 3. Mysql 5.6
 4. IDE Eclipse ou IntelliJ
+ ###### Installation
+ 1. Ouvrir le projet avec l'IDE
+ 2. Update des dépendances avec MAVEN
+ 3. Démarrer le fichier <attr>FilRougeApplication</attr>
 
 ## Shema Base de Données MySql
  
