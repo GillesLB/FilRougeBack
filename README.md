@@ -19,7 +19,7 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 USE `police_app`;
  ```
  
-* Les Tables sont crées si elle n'existe pas
+* Les Tables sont crées si elle n'existe pas 
  Exemple :
  
  ```SQL
