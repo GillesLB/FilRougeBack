@@ -12,7 +12,7 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
  2. Update des dépendances avec MAVEN
  3. Démarrer le fichier `FilRougeApplication`
 
-## Shema Base de Données MySql
+## Schema Base de Données MySql
  
 Format: ![Alt Text](https://github.com/stephp30/FilRougeBack/blob/master/img/SchemaBDD.PNG)
 
