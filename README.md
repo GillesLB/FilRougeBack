@@ -11,7 +11,7 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 1. Ouvrir le projet avec l'IDE
 2. Update des dépendances avec MAVEN
 3. Démarrer le fichier `FilRougeApplication`
- ###### Déroulement
+ ###### Schema SQL
  * La Base de Données est créée si elle n'existe pas et la base est selectionnée
  
  ```SQL
@@ -31,6 +31,11 @@ Exemple :
   `user` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ ```
+ ###### Data SQL
+ * Un jeux de données de test est chargé en base par défaut
+ ```SQL
+ INSERT IGNORE INTO `police_case` (`id`,`name`,`description`) VALUES (1,'avion détouné','mi, ac mattis velit justo nec')
  ```
 
 ## Schema Base de Données MySql
