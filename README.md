@@ -5,7 +5,7 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
  ###### Prérequis 
 1. JDK 1.8.0_151
 2. Apache Maven 3.5.2 
-![Maven Central](https://img.shields.io/maven-central/v/org.apache.maven/apache-maven.svg)
+![Alt Text](https://img.shields.io/badge/Maven-3.5.2-green.svg)
 
 3. Mysql 5.6
 4. IDE Eclipse ou IntelliJ
