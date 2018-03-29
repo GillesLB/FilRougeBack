@@ -13,10 +13,11 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 3. Démarrer le fichier `FilRougeApplication`
  ###### Déroulement
  La Base de Données est crée si elle n'existe pas 
- ...
+ 
+ ```SQL
  CREATE DATABASE IF NOT EXISTS `police_app` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `police_app`;
- ...
+ ```
 
 ## Schema Base de Données MySql
  
