@@ -45,17 +45,17 @@ Exemple :
  ### Utilisation des API
  ##### Routes
  ###### CASE
- * http://loacalhost:8080/api/case
- * http://loacalhost:8080/api/case/{id}
+ * http://localhost:8080/api/case
+ * http://localhost:8080/api/case/{id}
  ###### VEHICULE
- * http://loacalhost:8080/api/vehicule
- * http://loacalhost:8080/api/vehicule/{id}
+ * http://localhost:8080/api/vehicule
+ * http://localhost:8080/api/vehicule/{id}
  ###### PEOPLE
- * http://loacalhost:8080/api/people
- * http://loacalhost:8080/api/people/{id}
+ * http://localhost:8080/api/people
+ * http://localhost:8080/api/people/{id}
  ###### PEOPLE
- * http://loacalhost:8080/api/weapon
- * http://loacalhost:8080/api/weapon/{id}
+ * http://localhost:8080/api/weapon
+ * http://localhost:8080/api/weapon/{id}
  
 
 ## Schema Base de Données MySql
