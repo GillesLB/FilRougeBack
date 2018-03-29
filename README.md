@@ -56,6 +56,9 @@ Exemple :
  ###### WEAPON
  * http://localhost:8080/api/weapon
  * http://localhost:8080/api/weapon/{id}
+ ###### PIECE OF EVIDENCE
+ * http://localhost:8080/api/piece
+ * http://localhost:8080/api/piece/{id}
  
 
 ## Schema Base de Données MySql
