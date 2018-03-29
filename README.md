@@ -53,7 +53,7 @@ Exemple :
  ###### PEOPLE
  * http://localhost:8080/api/people
  * http://localhost:8080/api/people/{id}
- ###### PEOPLE
+ ###### WEAPON
  * http://localhost:8080/api/weapon
  * http://localhost:8080/api/weapon/{id}
  
