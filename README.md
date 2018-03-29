@@ -12,14 +12,14 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 2. Update des dépendances avec MAVEN
 3. Démarrer le fichier `FilRougeApplication`
  ###### Déroulement
- La Base de Données est créée si elle n'existe pas et la base est selectionnée
+ * La Base de Données est créée si elle n'existe pas et la base est selectionnée
  
  ```SQL
  CREATE DATABASE IF NOT EXISTS `police_app` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `police_app`;
  ```
  
- Les Tables sont crées si elle n'existe pas
+* Les Tables sont crées si elle n'existe pas
  Exemple :
  
  ```SQL
