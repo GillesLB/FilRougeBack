@@ -14,6 +14,6 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 
 ## Schema Base de Données MySql
  
-Format: ![Alt Text](https://github.com/stephp30/FilRougeBack/blob/master/img/SchemaBDD.PNG)
+Schema: ![Alt Text](https://github.com/stephp30/FilRougeBack/blob/master/img/SchemaBDD.PNG)
 
 
