@@ -4,7 +4,7 @@ API REST SPRING BOOT JPA + SCRIPT SQL + PREPARESTATEMENT
 
 # This is an <h1> tag
  
-Format: ![Alt Text](/img/SchemaBDD.png)
+Format: ![Alt Text](img/SchemaBDD.png)
 
 ## This is an <h2> tag
 
