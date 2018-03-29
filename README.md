@@ -1,8 +1,8 @@
 # FilRougeBack
-API REST SPRING BOOT JPA + SCRIPT SQL + PREPARESTATEMENT
+API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 
 
-# This is an <h1> tag
+## Shema Base de Données MySql
  
 Format: ![Alt Text](https://github.com/stephp30/FilRougeBack/blob/master/img/SchemaBDD.PNG)
 
