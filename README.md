@@ -3,7 +3,13 @@ API REST SPRING BOOT JPA + SCRIPT SQL + PREPARESTATEMENT
 
 
 # This is an <h1> tag
+
+
 ## This is an <h2> tag
+
+  ![GitHub Logo](/Schema BDD.png)
+Format: ![Alt Text](Schema BDD)
+
 ###### This is an <h6> tag
 
 *This text will be italic*
