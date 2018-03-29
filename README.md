@@ -36,7 +36,8 @@ Exemple :
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
  ```
  ###### Data SQL
- * Un jeux de données de test est chargé en base par défaut
+ * Un jeux de données de test est chargé en base par défaut  
+ Exemple :
  ```SQL
  INSERT IGNORE INTO `police_case` (`id`,`name`,`description`) VALUES (1,'avion détouné','mi, ac mattis velit justo nec')
  ```
