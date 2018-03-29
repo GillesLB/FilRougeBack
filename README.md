@@ -11,7 +11,7 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 1. Ouvrir le projet avec l'IDE
 2. Update des dépendances avec MAVEN
 3. Modifier les propriétés MySQL du fichier `application.properties` en fonction de l'environnement du poste d'execution
-4. Démarrer le fichier `FilRougeApplication`
+4. Démarrer l'application
 
 ### Initialisation
  ###### Schema SQL
