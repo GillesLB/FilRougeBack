@@ -10,7 +10,7 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
  ###### Installation
  1. Ouvrir le projet avec l'IDE
  2. Update des dépendances avec MAVEN
- 3. Démarrer le fichier <attr>FilRougeApplication</attr>
+ 3. Démarrer le fichier `FilRougeApplication`
 
 ## Shema Base de Données MySql
  
