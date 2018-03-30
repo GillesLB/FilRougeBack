@@ -10,7 +10,7 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
  ###### Démarrage
 1. Ouvrir le projet avec l'IDE
 2. Update des dépendances avec MAVEN
-3. Modifier les propriétés MySQL du fichier `application.properties` en fonction de l'environnement du poste d'execution
+3. Modifier les propriétés MySQL du fichier `application.properties `localhost:3306` `username` `password`en fonction de l'environnement du poste d'execution
 ```
 ##Proprietes Mysql
 spring.datasource.url = jdbc:mysql://localhost:3306/police_app?createDatabaseIfNotExist=true&useSSL=false
