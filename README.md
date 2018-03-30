@@ -11,6 +11,12 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 1. Ouvrir le projet avec l'IDE
 2. Update des dépendances avec MAVEN
 3. Modifier les propriétés MySQL du fichier `application.properties` en fonction de l'environnement du poste d'execution
+```
+##Proprietes Mysql
+spring.datasource.url = jdbc:mysql://localhost:3306/police_app?createDatabaseIfNotExist=true&useSSL=false
+spring.datasource.username = admin
+spring.datasource.password = admin
+```
 4. Démarrer l'application
 ###### Ou
 Démmarrer directement le fichier `filRouge-0.0.1-SNAPSHOT.jar` dans le dossier target avec la commande  
