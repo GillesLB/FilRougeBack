@@ -12,6 +12,9 @@ API REST SPRING BOOT + JPA + SCRIPT SQL + PREPARESTATEMENT
 2. Update des dépendances avec MAVEN
 3. Modifier les propriétés MySQL du fichier `application.properties` en fonction de l'environnement du poste d'execution
 4. Démarrer l'application
+###### OU  
+Démmarrer directement le fichier `filRouge-0.0.1-SNAPSHOT.jar` dans le dossier target avec la commande `java -jar .\filRouge-0.0.1-SNAPSHOT.jar`
+
 
 ### Initialisation
  ###### Schema SQL
