@@ -23,7 +23,7 @@ Démarrer directement le fichier `filRouge-0.0.1-SNAPSHOT.jar` dans le dossier t
 `java -jar .\filRouge-0.0.1-SNAPSHOT.jar`  (sous réserve que la config Mysql corresponde)
 
 
-### Initialisation
+### Initialisation (à partir des fichiers .sql présent dans le dossier ressources)
  ###### Schema.sql
  * La Base de Données est créée si elle n'existe pas et la base est selectionnée
  
