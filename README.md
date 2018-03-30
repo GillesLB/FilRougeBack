@@ -19,8 +19,8 @@ spring.datasource.password = admin
 ```
 4. Démarrer l'application
 ###### Ou
-Démmarrer directement le fichier `filRouge-0.0.1-SNAPSHOT.jar` dans le dossier target avec la commande  
-`java -jar .\filRouge-0.0.1-SNAPSHOT.jar`
+Démarrer directement le fichier `filRouge-0.0.1-SNAPSHOT.jar` dans le dossier target avec la commande  
+`java -jar .\filRouge-0.0.1-SNAPSHOT.jar`  (sous réserve que la config Mysql corresponde)
 
 
 ### Initialisation
