@@ -18,7 +18,7 @@ Démmarrer directement le fichier `filRouge-0.0.1-SNAPSHOT.jar` dans le dossier 
 
 
 ### Initialisation
- ###### Schema SQL
+ ###### Schema.sql
  * La Base de Données est créée si elle n'existe pas et la base est selectionnée
  
  ```SQL
@@ -39,7 +39,7 @@ Exemple :
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
  ```
- ###### Data SQL
+ ###### Data.sql
  * Un jeux de données de test est chargé en base par défaut  
  Exemple :
  ```SQL
